@@ -4,12 +4,12 @@ SOCKET_PACKAGE_SITE_METHOD = git
 SOCKET_PACKAGE_GIT_SUBMODULES = YES
 
 define SOCKET_PACKAGE_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/app all
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/app/src all
 endef
 
 define SOCKET_PACKAGE_INSTALL_TARGET_CMDS
-	$(INSTALL) -m 0755 $(@D)/app/socket_package $(TARGET_DIR)/usr/bin
-	$(INSTALL) -m 0755 $(@D)/app/socket_package.sh $(TARGET_DIR)/etc/init.d/S99socketpackage
+	$(INSTALL) -m 0755 $(@D)/app/src/socket_package $(TARGET_DIR)/usr/bin
+	$(INSTALL) -m 0755 $(@D)/app/src/socket_package.sh $(TARGET_DIR)/etc/init.d/S99socketpackage
 endef
 
 $(eval $(generic-package))
