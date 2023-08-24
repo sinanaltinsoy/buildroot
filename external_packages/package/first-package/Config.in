@@ -1,5 +1,0 @@
-
-config BR2_PACKAGE_FIRST_PACKAGE
-	bool "first-package"
-	help
-	  This is an external package for buildroot

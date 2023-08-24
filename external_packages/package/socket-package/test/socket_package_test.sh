@@ -7,7 +7,7 @@ port=9000
 function printusage
 {
 	echo "Usage: $0 [-t target_ip] [-p port]"
-	echo "	Runs a socket test on the aesdsocket application at"
+	echo "	Runs a socket test on the socket package application at"
 	echo " 	target_ip and port specified by port"
 	echo "	target_ip defaults to ${target}" 
 	echo "	port defaults to ${port}" 
@@ -36,7 +36,7 @@ done
 
 echo "Testing target ${target} on port ${port}"
 
-# Tests to ensure socket send/receive is working properly on an aesdsocket utility
+# Tests to ensure socket send/receive is working properly on an socket package utility
 # running on the system
 # @param1 : The string to send
 # @param2 : The previous compare file
