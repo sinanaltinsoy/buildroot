@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL_project_base_PATH/package/first-package/Config.in"
+source "$BR2_EXTERNAL_project_base_PATH/package/socket-package/Config.in"

@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_SOCKET_PACKAGE
+	bool "socket-package"
+	help
+	  This is an external package for buildroot
